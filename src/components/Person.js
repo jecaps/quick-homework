@@ -1,4 +1,4 @@
-export default function ListItem({ name, image, status }) {
+export default function Person({ name, image, status }) {
   return (
     <li
       style={{

@@ -1,12 +1,12 @@
 import { persons } from "./assets/persons";
 import "./App.css";
 
-import ListItem from "./components/ListItem";
+import Person from "./components/Person";
 
 function App() {
-  const listItemElement = persons.map((person) => {
+  const personElement = persons.map((person) => {
     return (
-      <ListItem
+      <Person
         key={person.id}
         name={person.name}
         image={person.image}
@@ -15,11 +15,7 @@ function App() {
     );
   });
 
-  return (
-    <>
-      <ul>{listItemElement}</ul>
-    </>
-  );
+  return <ul>{personElement}</ul>;
 }
 
 export default App;
